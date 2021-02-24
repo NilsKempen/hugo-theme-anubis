@@ -1,3 +1,5 @@
+{{ partial "pagination-extra.html" . }}
+
 {{ if or ( .PrevInSection ) ( .NextInSection ) }}
     <div class="pagination post-pagination">
         <div class="left pagination-item {{ if not .NextInSection }}disabled{{ end }}">
@@ -13,4 +15,3 @@
     </div>
 {{ end }}
 
-{{ partial "pagination-extra.html" . }}
